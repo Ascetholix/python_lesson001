@@ -5,15 +5,31 @@
 # ⋀ - and
 from random import choice
 
-bool = [True, False]
+# Проверка циклом
 
-x = choice(bool)
-y = choice(bool)
-z = choice(bool)
+x = [True, False]       
+y = [True, False]
+z = [True, False]
 
-print(f'X = {x}, Y = {y}, Z = {z}')
+for i in x:
+  for j in y:
+    for k in z:
+      if not(i or j or k) == ((not(i)) and (not(j)) and (not(k))):
+        print("Резултат проверки" , True)
+      else:
+        print("Резултат проверки" , False)
+        
+# Рандомная проверка
 
-if not(x and y and z) == ((not(x)) or (not(y)) or (not(z))):
-  print("Резултат проверки" , True)
-else:
-  print("Резултат проверки" , False)
+# bool = [True, False]
+
+# x = choice(bool)      
+# y = choice(bool)
+# z = choice(bool)
+
+# print(f'X = {x}, Y = {y}, Z = {z}')
+
+# if not(x or y or z) == ((not(x)) and (not(y)) and (not(z))):
+#   print("Резултат проверки" , True)
+# else:
+#   print("Резултат проверки" , False)
