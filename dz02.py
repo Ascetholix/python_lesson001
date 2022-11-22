@@ -15,9 +15,9 @@ for i in x:
   for j in y:
     for k in z:
       if not(i or j or k) == ((not(i)) and (not(j)) and (not(k))):
-        print("Резултат проверки" , True)
+        print(f"Результат проверки X = {i}, Y = {j}, Z = {k} истинное"  )
       else:
-        print("Резултат проверки" , False)
+        print(f"Результат проверки X = {i}, Y = {j}, Z = {k} ложное" )
         
 # Рандомная проверка
 
@@ -30,6 +30,6 @@ for i in x:
 # print(f'X = {x}, Y = {y}, Z = {z}')
 
 # if not(x or y or z) == ((not(x)) and (not(y)) and (not(z))):
-#   print("Резултат проверки" , True)
+#   print("Результат проверки" , True)
 # else:
-#   print("Резултат проверки" , False)
+#   print("Результат проверки" , False)
